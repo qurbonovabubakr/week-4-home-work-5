@@ -379,3 +379,111 @@ p {
         margin-bottom: 20px;
     }
 }
+
+.call-block {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 120px auto 80px auto;
+    padding: 35px;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 40px;
+}
+
+.call-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.call-text {
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.call-fields {
+    display: flex;
+}
+
+.call-field {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.call-field p {
+    margin-bottom: 8px;
+}
+
+.call-field input {
+    width: 160px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 20px;
+    background: #f2f5f7;
+}
+
+.call-btn {
+    width: 180px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(#3cb869, #2a9d55);
+}
+
+.call-small {
+    width: 380px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.call-small a {
+    color: #2ecc71;
+}
+
+.call-doctor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 330px;
+}
+
+@media (max-width: 800px) {
+
+    .call-doctor {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .call-block {
+        width: auto;
+        margin: 20px 15px;
+        padding: 25px;
+        border-radius: 40px;
+    }
+
+    .call-title {
+        font-size: 28px;
+    }
+
+    .call-fields {
+        flex-direction: column-reverse;
+    }
+
+    .call-field input {
+        width: 85%;
+    }
+
+    .call-btn {
+        width: 90%;
+    }
+
+    .call-small {
+        width: auto;
+    }
+}
