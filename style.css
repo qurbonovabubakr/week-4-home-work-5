@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+p {
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.btn {
+    background: green;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu p {
+    margin-left: 25px;
+}
+
+.burger {
+    display: none;
+}
+
+.path {
+    padding: 5px 50px;
+    font-size: 10px;
+}
+
+@media (max-width: 500px) {
+
+    .top {
+        display: none;
+    }
+
+    .main {
+        padding: 10px 15px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: black;
+        margin: 5px 0;
+    }
+
+    .path {
+        padding: 8px 15px;
+        font-size: 12px;
+        background: #f5f5f5;
+    }
+}
